@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseCore
 
 class loggedInViewController: UIViewController {
 
@@ -14,10 +16,16 @@ class loggedInViewController: UIViewController {
     }
     
     @IBAction func logOutButtonTapped(_ sender: Any) {
-        let storyboard=UIStoryboard(name: "Main", bundle: nil)
-        let vc=storyboard.instantiateViewController(withIdentifier: "ViewController")
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc,animated: false)
+        let firebaseAuth = Auth.auth()
+            do {
+              try firebaseAuth.signOut()
+                let storyboard=UIStoryboard(name: "Main", bundle: nil)
+                let vc=storyboard.instantiateViewController(withIdentifier: "home")
+                vc.modalPresentationStyle = .overFullScreen
+                present(vc,animated: false)
+            } catch let signOutError as NSError {
+              print("Error signing out: %@", signOutError)
+            }
     }
     
 
