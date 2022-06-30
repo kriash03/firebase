@@ -40,7 +40,7 @@
 			</array>
 		</dict>
 	</dict>
-    
+<!--    -->
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -56,6 +56,6 @@
     <string>5455e8938ecaf2dffd67cdd1b5afae71</string>
     <key>FacebookDisplayName</key>
     <string>firebase</string>
-    
+
 </dict>
 </plist>

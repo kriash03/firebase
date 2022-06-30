@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 annotation: options[UIApplication.OpenURLOptionsKey.annotation]
             )
         } else {
-           flag = GIDSignIn.sharedInstance.handle(url)
+            flag = GIDSignIn.sharedInstance.handle(url)
         }
         return flag
         }
