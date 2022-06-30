@@ -5,8 +5,6 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb5193013877443015</string>
@@ -21,6 +19,12 @@
 			</array>
 		</dict>
 	</array>
+	<key>FacebookAppID</key>
+	<string>5193013877443015</string>
+	<key>FacebookClientToken</key>
+	<string>5455e8938ecaf2dffd67cdd1b5afae71</string>
+	<key>FacebookDisplayName</key>
+	<string>firebase</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -40,22 +44,5 @@
 			</array>
 		</dict>
 	</dict>
-<!--    -->
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb5193013877443015</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>5193013877443015</string>
-    <key>FacebookClientToken</key>
-    <string>5455e8938ecaf2dffd67cdd1b5afae71</string>
-    <key>FacebookDisplayName</key>
-    <string>firebase</string>
-
 </dict>
 </plist>
